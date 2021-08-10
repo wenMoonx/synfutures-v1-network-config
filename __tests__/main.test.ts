@@ -1,42 +1,82 @@
-import { Delays, greeter } from '../src/main';
+import { mainnetConfig, kovanConfig, polygonConfig } from '../src/main';
 
-describe('greeter function', () => {
-  const name = 'John';
-  let hello: string;
-
-  let timeoutSpy: jest.SpyInstance;
-
-  // Act before assertions
-  beforeAll(async () => {
-    // Read more about fake timers
-    // http://facebook.github.io/jest/docs/en/timer-mocks.html#content
-    // Jest 27 now uses "modern" implementation of fake timers
-    // https://jestjs.io/blog/2021/05/25/jest-27#flipping-defaults
-    // https://github.com/facebook/jest/pull/5171
-    jest.useFakeTimers();
-    timeoutSpy = jest.spyOn(global, 'setTimeout');
-
-    const p: Promise<string> = greeter(name);
-    jest.runOnlyPendingTimers();
-    hello = await p;
+describe('mainnet config', () => {
+  it('mainnet config is not empty', () => {
+    expect(mainnetConfig).toBeTruthy();
   });
 
-  // Teardown (cleanup) after assertions
-  afterAll(() => {
-    timeoutSpy.mockRestore();
+  it('chainId is correct', () => {
+    expect(mainnetConfig.chainId).toEqual(1);
   });
 
-  // Assert if setTimeout was called properly
-  it('delays the greeting by 2 seconds', () => {
-    expect(setTimeout).toHaveBeenCalledTimes(1);
-    expect(setTimeout).toHaveBeenLastCalledWith(
-      expect.any(Function),
-      Delays.Long,
-    );
+  it('contract address is not empty', () => {
+    for (const productType in mainnetConfig.contractAddress) {
+      const contractAddressConfigs = mainnetConfig.contractAddress[productType];
+      // config is not empty
+      expect(contractAddressConfigs).toBeTruthy();
+      // address is not empty
+      for (const key in contractAddressConfigs) {
+        const address = contractAddressConfigs[key];
+        expect(address).toBeTruthy();
+      }
+    }
   });
 
-  // Assert greeter result
-  it('greets a user with `Hello, {name}` message', () => {
-    expect(hello).toBe(`Hello, ${name}`);
+  it('subgraph url is not empty', () => {
+    expect(mainnetConfig.subgraphUrl).toBeTruthy();
+  });
+});
+
+describe('kovanConfig', () => {
+  it('kovan config is not empty', () => {
+    expect(kovanConfig).toBeTruthy();
+  });
+
+  it('chainId is correct', () => {
+    expect(kovanConfig.chainId).toEqual(42);
+  });
+
+  it('contract address is not empty', () => {
+    for (const productType in kovanConfig.contractAddress) {
+      const contractAddressConfigs = kovanConfig.contractAddress[productType];
+      // config is not empty
+      expect(contractAddressConfigs).toBeTruthy();
+      // address is not empty
+      for (const key in contractAddressConfigs) {
+        const address = contractAddressConfigs[key];
+        expect(address).toBeTruthy();
+      }
+    }
+  });
+
+  it('subgraph url is not empty', () => {
+    expect(kovanConfig.subgraphUrl).toBeTruthy();
+  });
+});
+
+describe('polygonConfig', () => {
+  it('polygon config is not empty', () => {
+    expect(polygonConfig).toBeTruthy();
+  });
+
+  it('chainId is correct', () => {
+    expect(polygonConfig.chainId).toEqual(137);
+  });
+
+  it('contract address is not empty', () => {
+    for (const productType in polygonConfig.contractAddress) {
+      const contractAddressConfigs = polygonConfig.contractAddress[productType];
+      // config is not empty
+      expect(contractAddressConfigs).toBeTruthy();
+      // address is not empty
+      for (const key in contractAddressConfigs) {
+        const address = contractAddressConfigs[key];
+        expect(address).toBeTruthy();
+      }
+    }
+  });
+
+  it('subgraph url is not empty', () => {
+    expect(polygonConfig.subgraphUrl).toBeTruthy();
   });
 });
