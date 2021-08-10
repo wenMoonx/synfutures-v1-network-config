@@ -5,6 +5,7 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
+    "declaration": true,
     "importHelpers": true,
     "jsx": "react",
     "alwaysStrict": true,
@@ -19,7 +20,9 @@
     "strictNullChecks": false
   },
   "include": [
-    "src/**/*",
-    "__tests__/**/*"
-  ]
+    "**/src/**/*.ts",
+    "**/*.test.*"
+    // etc
+  ],
+  "exclude": ["node_modules", "temp", "coverage"]
 }
