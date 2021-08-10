@@ -1,9 +1,9 @@
-# SynFutures v1 chain config
+# SynFutures v1 network config
 
 [![TypeScript version][ts-badge]][typescript-4-3]
 [![Node.js version][nodejs-badge]][nodejs]
 
-This repository is the chain config for our SynFutures app, including contract address and subgraph etc.
+This repository is the network config for our SynFutures app, including contract address and subgraph etc.
 
 ---
 
@@ -38,7 +38,7 @@ This project is intended to be used with the latest Active LTS release of [Node.
 
 ## License
 
-Licensed under the APLv2. See the [LICENSE](https://github.com/SynFutures/synfutures-v1-chain-config/blob/main/LICENSE) file for details.
+Licensed under the APLv2. See the [LICENSE](https://github.com/SynFutures/synfutures-v1-network-config/blob/main/LICENSE) file for details.
 
 [ts-badge]: https://img.shields.io/badge/TypeScript-4.3-blue.svg
 [nodejs-badge]: https://img.shields.io/badge/Node.js->=%2014.16-blue.svg
