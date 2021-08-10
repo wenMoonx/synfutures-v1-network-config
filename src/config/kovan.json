@@ -1,0 +1,18 @@
+{
+  "chainId": 42,
+  "contractAddress": {
+    "Basic": {
+      "globalConfig": "0x928e85ec6a7f6dc4aa8211428e9e49e89e1b8f04",
+      "oracleController": "0xf81ee8cdd0a1aa168d68d6371afd32436c42a493",
+      "factory": "0x6e893ddfa75d67febb853e00f81c913c151bf9a9",
+      "reader": "0x4f6eeed538d289490a073ed4c7711ced20dad46e"
+    },
+    "BtcHashRate": {
+      "factory": "0x24de4E74Dec1200577838081EE4C0665911ae4Ee",
+      "reader": "0x50536aF84576dC938d3bf025c8AC6A6EbF0180bE",
+      "globalConfig": "0xa74eB4CeC710573A180a1105e3c55B608219B375",
+      "oracleController": "0x381a5b89D0B48AB592d0e0C6e9CFaefcf0DF9e26"
+    }
+  },
+  "subgraphUrl": "https://api.studio.thegraph.com/query/4404/synfutures-v1-kovan/v0.0.9"
+}
