@@ -39,5 +39,13 @@
   },
   "volta": {
     "node": "14.16.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SynFutures/synfutures-v1-network-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SynFutures/synfutures-v1-network-config/issues"
+  },
+  "homepage": "https://github.com/SynFutures/synfutures-v1-network-config#readme"
 }
