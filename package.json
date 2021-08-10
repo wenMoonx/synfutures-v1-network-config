@@ -1,7 +1,7 @@
 {
-  "name": "node-typescript-boilerplate",
+  "name": "synfutures-v1-chain-config",
   "version": "0.0.0",
-  "description": "Minimalistic boilerplate to quick-start Node.js development in TypeScript.",
+  "description": "The chain config for our SynFutures app.",
   "author": "SynFutures",
   "main": "build/src/main.js",
   "types": "build/src/main.d.ts",
