@@ -17,7 +17,6 @@ This repository is the network config for our SynFutures app, including contract
 - NPM [scripts](#available-scripts) for common operations
 - Simple example of TypeScript code and unit test
 - .editorconfig for consistent file format
-- Reproducible environments thanks to [Volta][volta]
 - Example configuration for [GitHub Actions][gh-actions]
 
 🤲 Free as in speech: available under the APLv2 license.
@@ -46,12 +45,7 @@ Licensed under the APLv2. See the [LICENSE](https://github.com/SynFutures/synfut
 [typescript]: https://www.typescriptlang.org/
 [typescript-4-3]: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-3.html
 [license-badge]: https://img.shields.io/badge/license-APLv2-blue.svg
-[sponsor-badge]: https://img.shields.io/badge/♥-Sponsor-fc0fb5.svg
-[sponsor]: https://github.com/sponsors/jsynowiec
 [jest]: https://facebook.github.io/jest/
 [eslint]: https://github.com/eslint/eslintUnit-tests-in-plain-JavaScript
 [prettier]: https://prettier.io
-[volta]: https://volta.sh
-[volta-getting-started]: https://docs.volta.sh/guide/getting-started
-[volta-tomdale]: https://twitter.com/tomdale/status/1162017336699838467?s=20
 [gh-actions]: https://github.com/features/actions
