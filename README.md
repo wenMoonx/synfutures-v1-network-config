@@ -7,20 +7,6 @@ This repository is the network config for our SynFutures app, including contract
 
 ---
 
-🏃🏽 Instant Value: All basic tools included and configured:
-
-- [TypeScript][typescript] [4.3][typescript-4-3]
-- [ESLint][eslint] with some initial rules recommendation
-- [Jest][jest] for fast unit testing and code coverage
-- Type definitions for Node.js and Jest
-- [Prettier][prettier] to enforce consistent code style
-- NPM [scripts](#available-scripts) for common operations
-- Simple example of TypeScript code and unit test
-- .editorconfig for consistent file format
-- Example configuration for [GitHub Actions][gh-actions]
-
-🤲 Free as in speech: available under the APLv2 license.
-
 ## Getting Started
 
 This project is intended to be used with the latest Active LTS release of [Node.js][nodejs].
