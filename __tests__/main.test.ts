@@ -1,5 +1,5 @@
 import {
-  mainnetConfig,
+  ethereumConfig,
   kovanConfig,
   polygonConfig,
   bscConfig,
@@ -7,16 +7,17 @@ import {
 
 describe('mainnet config', () => {
   it('mainnet config is not empty', () => {
-    expect(mainnetConfig).toBeTruthy();
+    expect(ethereumConfig).toBeTruthy();
   });
 
   it('chainId is correct', () => {
-    expect(mainnetConfig.chainId).toEqual(1);
+    expect(ethereumConfig.chainId).toEqual(1);
   });
 
   it('contract address is not empty', () => {
-    for (const productType in mainnetConfig.contractAddress) {
-      const contractAddressConfigs = mainnetConfig.contractAddress[productType];
+    for (const productType in ethereumConfig.contractAddress) {
+      const contractAddressConfigs =
+        ethereumConfig.contractAddress[productType];
       // config is not empty
       expect(contractAddressConfigs).toBeTruthy();
       // address is not empty
@@ -28,7 +29,7 @@ describe('mainnet config', () => {
   });
 
   it('subgraph url is not empty', () => {
-    expect(mainnetConfig.subgraphUrl).toBeTruthy();
+    expect(ethereumConfig.subgraphUrl).toBeTruthy();
   });
 });
 
