@@ -1,5 +1,13 @@
 {
   "chainId": 1,
+  "chainName": "Ethereum Mainnet",
+  "nativeCurrency": {
+    "name": "Ethereum",
+    "symbol": "ETH",
+    "decimals": 18
+  },
+  "rpcUrl": "https://mainnet.infura.io/v3",
+  "blockExplorerUrl": "https://etherscan.com",
   "contractAddress": {
     "Basic": {
       "globalConfig": "0x928e85Ec6A7F6dC4Aa8211428e9E49e89e1b8f04",

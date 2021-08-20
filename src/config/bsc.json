@@ -1,5 +1,13 @@
 {
-  "chainId": 53,
+  "chainId": 56,
+  "chainName": "Binance Smart Chain Mainnet",
+  "nativeCurrency": {
+    "name": "Binance Coin",
+    "symbol": "BNB",
+    "decimals": 18
+  },
+  "rpcUrl": "https://bsc-dataseed.binance.org",
+  "blockExplorerUrl": "https://bscscan.com",
   "contractAddress": {
     "Basic": {
       "globalConfig": "0x928e85Ec6A7F6dC4Aa8211428e9E49e89e1b8f04",
