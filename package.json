@@ -1,6 +1,6 @@
 {
   "name": "@synfutures/synfutures-v1-network-config",
-  "version": "0.0.2-dev.0",
+  "version": "0.0.2-dev.1",
   "description": "The network config for our SynFutures app.",
   "author": "SynFutures",
   "main": "build/src/main.js",
@@ -27,6 +27,7 @@
     "start": "node build/src/main.js",
     "clean": "rimraf coverage build tmp",
     "prebuild": "npm run lint",
+    "prepare": "npm run build",
     "build": "tsc -p tsconfig.release.json",
     "build:watch": "tsc -w -p tsconfig.release.json",
     "lint": "eslint . --ext .ts,.tsx",
