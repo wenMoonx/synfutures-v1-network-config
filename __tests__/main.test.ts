@@ -1,4 +1,9 @@
-import { mainnetConfig, kovanConfig, polygonConfig } from '../src/main';
+import {
+  mainnetConfig,
+  kovanConfig,
+  polygonConfig,
+  bscConfig,
+} from '../src/main';
 
 describe('mainnet config', () => {
   it('mainnet config is not empty', () => {
@@ -78,5 +83,32 @@ describe('polygonConfig', () => {
 
   it('subgraph url is not empty', () => {
     expect(polygonConfig.subgraphUrl).toBeTruthy();
+  });
+});
+
+describe('bsc config', () => {
+  it('bsc config is not empty', () => {
+    expect(bscConfig).toBeTruthy();
+  });
+
+  it('chainId is correct', () => {
+    expect(bscConfig.chainId).toEqual(53);
+  });
+
+  it('contract address is not empty', () => {
+    for (const productType in bscConfig.contractAddress) {
+      const contractAddressConfigs = bscConfig.contractAddress[productType];
+      // config is not empty
+      expect(contractAddressConfigs).toBeTruthy();
+      // address is not empty
+      for (const key in contractAddressConfigs) {
+        const address = contractAddressConfigs[key];
+        expect(address).toBeTruthy();
+      }
+    }
+  });
+
+  it('subgraph url is not empty', () => {
+    expect(bscConfig.subgraphUrl).toBeTruthy();
   });
 });
