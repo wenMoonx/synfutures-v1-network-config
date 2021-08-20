@@ -1,0 +1,12 @@
+{
+  "chainId": 53,
+  "contractAddress": {
+    "Basic": {
+      "globalConfig": "0x928e85Ec6A7F6dC4Aa8211428e9E49e89e1b8f04",
+      "oracleController": "0xf81Ee8CDD0A1aa168D68D6371AFd32436C42a493",
+      "factory": "0x6E893DDfA75D67FEbb853e00f81c913c151BF9A9",
+      "reader": "0x4f6EEEd538D289490A073ed4C7711ceD20DAD46e"
+    }
+  },
+  "subgraphUrl": "https://api.studio.thegraph.com/query/872/bsc/v_1.1.202108191604"
+}
