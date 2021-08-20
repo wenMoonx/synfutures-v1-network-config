@@ -93,7 +93,7 @@ describe('bsc config', () => {
   });
 
   it('chainId is correct', () => {
-    expect(bscConfig.chainId).toEqual(53);
+    expect(bscConfig.chainId).toEqual(56);
   });
 
   it('contract address is not empty', () => {
