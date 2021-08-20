@@ -1,6 +1,6 @@
 {
   "chainId": 137,
-  "chainName": "Matic(Polygon) Mainnet",
+  "chainName": "Polygon Mainnet",
   "nativeCurrency": {
     "name": "Matic",
     "symbol": "MATIC",
