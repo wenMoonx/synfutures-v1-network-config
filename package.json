@@ -1,6 +1,6 @@
 {
   "name": "@synfutures/synfutures-v1-network-config",
-  "version": "0.0.2-dev.1",
+  "version": "0.0.1-dev.3",
   "description": "The network config for our SynFutures app.",
   "author": "SynFutures",
   "main": "build/src/main.js",
