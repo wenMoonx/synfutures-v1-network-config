@@ -8,7 +8,7 @@
   },
   "rpcUrl": "https://rpc-mainnet.maticvigil.com",
   "blockExplorerUrl": "https://polygonscan.com",
-  "blockTime": "2500",
+  "blockTime": 2500,
   "contractAddress": {
     "Basic": {
       "globalConfig": "0x928e85Ec6A7F6dC4Aa8211428e9E49e89e1b8f04",
