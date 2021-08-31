@@ -1,5 +1,13 @@
 {
   "chainId": 42161,
+  "chainName": "Arbitrum One",
+  "nativeCurrency": {
+    "name": "Ethereum",
+    "symbol": "ETH",
+    "decimals": 18
+  },
+  "rpcUrl": "https://arb1.arbitrum.io/rpc",
+  "blockExplorerUrl": "https://arbiscan.io/",
   "contractAddress": {
     "Basic": {
       "globalConfig": "0xbD791Ab6AE364E176D5e2204B175C627A2814A34",
