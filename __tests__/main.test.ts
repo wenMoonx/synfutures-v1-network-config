@@ -3,6 +3,7 @@ import {
   kovanConfig,
   polygonConfig,
   bscConfig,
+  arbitrumConfig,
 } from '../src/main';
 
 describe('mainnet config', () => {
@@ -66,7 +67,7 @@ describe('polygonConfig', () => {
   });
 
   it('chainId is correct', () => {
-    expect(polygonConfig.chainId).toEqual(137);
+    expect(polygonConfig.chainId).toEqual(42161);
   });
 
   it('contract address is not empty', () => {
@@ -111,5 +112,33 @@ describe('bsc config', () => {
 
   it('subgraph url is not empty', () => {
     expect(bscConfig.subgraphUrl).toBeTruthy();
+  });
+});
+
+describe('arbitrum config', () => {
+  it('arbitrum config is not empty', () => {
+    expect(arbitrumConfig).toBeTruthy();
+  });
+
+  it('chainId is correct', () => {
+    expect(arbitrumConfig.chainId).toEqual(56);
+  });
+
+  it('contract address is not empty', () => {
+    for (const productType in arbitrumConfig.contractAddress) {
+      const contractAddressConfigs =
+        arbitrumConfig.contractAddress[productType];
+      // config is not empty
+      expect(contractAddressConfigs).toBeTruthy();
+      // address is not empty
+      for (const key in contractAddressConfigs) {
+        const address = contractAddressConfigs[key];
+        expect(address).toBeTruthy();
+      }
+    }
+  });
+
+  it('subgraph url is not empty', () => {
+    expect(arbitrumConfig.subgraphUrl).toBeTruthy();
   });
 });
