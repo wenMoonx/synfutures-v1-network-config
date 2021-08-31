@@ -67,7 +67,7 @@ describe('polygonConfig', () => {
   });
 
   it('chainId is correct', () => {
-    expect(polygonConfig.chainId).toEqual(42161);
+    expect(polygonConfig.chainId).toEqual(137);
   });
 
   it('contract address is not empty', () => {
@@ -121,7 +121,7 @@ describe('arbitrum config', () => {
   });
 
   it('chainId is correct', () => {
-    expect(arbitrumConfig.chainId).toEqual(56);
+    expect(arbitrumConfig.chainId).toEqual(42161);
   });
 
   it('contract address is not empty', () => {
