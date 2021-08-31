@@ -8,6 +8,7 @@
   },
   "rpcUrl": "https://kovan.infura.io/v3",
   "blockExplorerUrl": "https://etherscan.com",
+  "blockTime": "4000",
   "contractAddress": {
     "Basic": {
       "globalConfig": "0x928e85Ec6A7F6dC4Aa8211428e9E49e89e1b8f04",
@@ -22,5 +23,5 @@
       "oracleController": "0x381a5b89D0B48AB592d0e0C6e9CFaefcf0DF9e26"
     }
   },
-  "subgraphUrl":"https://api.studio.thegraph.com/query/4404/synfutures-v1-kovan/v0.0.12"
+  "subgraphUrl": "https://api.studio.thegraph.com/query/4404/synfutures-v1-kovan/v0.0.12"
 }

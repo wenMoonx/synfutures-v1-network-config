@@ -8,6 +8,7 @@
   },
   "rpcUrl": "https://bsc-dataseed.binance.org",
   "blockExplorerUrl": "https://bscscan.com",
+  "blockTime": "3000",
   "contractAddress": {
     "Basic": {
       "globalConfig": "0x928e85Ec6A7F6dC4Aa8211428e9E49e89e1b8f04",
