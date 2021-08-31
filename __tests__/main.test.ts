@@ -1,4 +1,10 @@
-import { ethereumConfig, kovanConfig, polygonConfig } from '../src/main';
+import {
+  ethereumConfig,
+  kovanConfig,
+  polygonConfig,
+  bscConfig,
+  arbitrumConfig,
+} from '../src/main';
 
 describe('mainnet config', () => {
   it('mainnet config is not empty', () => {
@@ -79,5 +85,60 @@ describe('polygonConfig', () => {
 
   it('subgraph url is not empty', () => {
     expect(polygonConfig.subgraphUrl).toBeTruthy();
+  });
+});
+
+describe('bsc config', () => {
+  it('bsc config is not empty', () => {
+    expect(bscConfig).toBeTruthy();
+  });
+
+  it('chainId is correct', () => {
+    expect(bscConfig.chainId).toEqual(56);
+  });
+
+  it('contract address is not empty', () => {
+    for (const productType in bscConfig.contractAddress) {
+      const contractAddressConfigs = bscConfig.contractAddress[productType];
+      // config is not empty
+      expect(contractAddressConfigs).toBeTruthy();
+      // address is not empty
+      for (const key in contractAddressConfigs) {
+        const address = contractAddressConfigs[key];
+        expect(address).toBeTruthy();
+      }
+    }
+  });
+
+  it('subgraph url is not empty', () => {
+    expect(bscConfig.subgraphUrl).toBeTruthy();
+  });
+});
+
+describe('arbitrum config', () => {
+  it('arbitrum config is not empty', () => {
+    expect(arbitrumConfig).toBeTruthy();
+  });
+
+  it('chainId is correct', () => {
+    expect(arbitrumConfig.chainId).toEqual(42161);
+  });
+
+  it('contract address is not empty', () => {
+    for (const productType in arbitrumConfig.contractAddress) {
+      const contractAddressConfigs =
+        arbitrumConfig.contractAddress[productType];
+      // config is not empty
+      expect(contractAddressConfigs).toBeTruthy();
+      // address is not empty
+      for (const key in contractAddressConfigs) {
+        const address = contractAddressConfigs[key];
+        expect(address).toBeTruthy();
+      }
+    }
+  });
+
+  it('subgraph url is not empty', () => {
+    expect(arbitrumConfig.subgraphUrl).toBeTruthy();
   });
 });

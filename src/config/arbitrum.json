@@ -1,0 +1,21 @@
+{
+  "chainId": 42161,
+  "chainName": "Arbitrum One",
+  "nativeCurrency": {
+    "name": "Ethereum",
+    "symbol": "ETH",
+    "decimals": 18
+  },
+  "rpcUrl": "https://arb1.arbitrum.io/rpc",
+  "blockExplorerUrl": "https://arbiscan.io/",
+  "blockTime": 3000,
+  "contractAddress": {
+    "Basic": {
+      "globalConfig": "0xbD791Ab6AE364E176D5e2204B175C627A2814A34",
+      "oracleController": "0x1C8f6a0656ab70978170FdC00952466D7Ca27bAF",
+      "factory": "0x1E7dB497d664E77fC96321A1ad0bf018E55CBfF8",
+      "reader": "0x138F7C8031D9e5f24e0883d17bD88D2EFa9a072D"
+    }
+  },
+  "subgraphUrl": "https://api.studio.thegraph.com/query/4400/arbitrum/v_1.1.202108311613"
+}

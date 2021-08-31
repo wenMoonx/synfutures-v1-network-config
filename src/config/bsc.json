@@ -1,14 +1,14 @@
 {
-  "chainId": 1,
-  "chainName": "Ethereum Mainnet",
+  "chainId": 56,
+  "chainName": "Binance Smart Chain Mainnet",
   "nativeCurrency": {
-    "name": "Ethereum",
-    "symbol": "ETH",
+    "name": "Binance Coin",
+    "symbol": "BNB",
     "decimals": 18
   },
-  "rpcUrl": "https://mainnet.infura.io/v3",
-  "blockExplorerUrl": "https://etherscan.com",
-  "blockTime": 10000,
+  "rpcUrl": "https://bsc-dataseed.binance.org",
+  "blockExplorerUrl": "https://bscscan.com",
+  "blockTime": 3000,
   "contractAddress": {
     "Basic": {
       "globalConfig": "0x928e85Ec6A7F6dC4Aa8211428e9E49e89e1b8f04",
@@ -17,5 +17,5 @@
       "reader": "0x4f6EEEd538D289490A073ed4C7711ceD20DAD46e"
     }
   },
-  "subgraphUrl": "https://api.studio.thegraph.com/query/4404/synfutures-v1-mainnet/v0.0.1"
+  "subgraphUrl": "https://api.studio.thegraph.com/query/872/bsc/v_1.1.202108191604"
 }
