@@ -17,5 +17,5 @@
       "reader": "0x138F7C8031D9e5f24e0883d17bD88D2EFa9a072D"
     }
   },
-  "subgraphUrl": ""
+  "subgraphUrl": "https://api.studio.thegraph.com/query/4400/arbitrum/v_1.1.202108311613"
 }
